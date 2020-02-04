@@ -4,14 +4,13 @@
 const Model = use('Model')
 
 class Invite extends Model {
-    use () {
-        return this.belongsTo('App/Models/User')
-    }
+  use () {
+    return this.belongsTo('App/Models/User')
+  }
 
-    team () {
-        return this.belongsTo('App/Models/Team')
-    }
-
+  team () {
+    return this.belongsTo('App/Models/Team')
+  }
 }
 
 module.exports = Invite
