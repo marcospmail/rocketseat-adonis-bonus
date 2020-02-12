@@ -10,7 +10,7 @@ class Invite extends Model {
     this.addHook('afterCreate', 'InviteHook.sendInvitationEmail')
   }
 
-  use () {
+  user () {
     return this.belongsTo('App/Models/User')
   }
 

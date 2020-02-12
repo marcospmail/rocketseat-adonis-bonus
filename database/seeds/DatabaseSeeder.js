@@ -13,6 +13,7 @@
 /** @type {import('@adonisjs/lucid/src/Factory')} */
 
 const User = use('App/Models/User')
+const Role = use('App/Acl/Role')
 
 class DatabaseSeeder {
   async run () {
